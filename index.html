@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<title>Donation</title>
+	<link rel="icon" href="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/tree.png" type="image/png" style="width:50%">
+</head>
+<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+	body,html{
+		height: 100%;
+		overflow: hidden;
+
+	}
+	.mySlides{
+		height: 100%;
+		max-width: 100%;
+	}
+
+	
+
+	.title{
+		border: none;
+		width: 100%;
+		position: absolute;
+		top:2px;
+		left:2px;
+		/*margin: 4px;*/
+		background-color:rgba(128, 128, 128,0.5);
+		
+	}
+	h2{
+		position: relative;
+		left:120px;
+		color: #FFFFFF;
+		font-size: 30px;
+		font-family: Times New Roman , Ariel,sans-serif; 
+
+	}
+
+	.nag1{
+		margin: 15px;
+		position: absolute;
+		right: 180px;
+		top: 3px;
+		color: #FFFFFF;
+		font-size: 25px;
+		font-family: Times New Roman , Ariel,sans-serif;
+	}
+	.nag2{
+		margin: 15px;
+		position: absolute;
+		right: 5px;
+		top: 3px;
+		color: #FFFFFF;
+		font-size: 25px;
+		font-family: Times New Roman , Ariel,sans-serif;
+	}
+
+	.para{
+		position:absolute;
+		bottom: 300px;
+		left: 300px;
+		font-size: 50px;
+		color: #FFE67c;
+	}
+	.line{
+		color: #FFFFFF;
+		position:absolute;
+		bottom: 150px;
+		left: 300px;
+		font-size: 27px;
+		vertical-align: middle;
+	}
+	#donate{
+		position: absolute;
+		bottom:50px;
+		text-decoration:none;
+		left: 550px;
+		margin: 25px;
+		
+		}
+	.donate{
+		font-size: 25px;
+		text-align: center;
+		background-color: #10182F;
+		color: #FFFFFF;
+		width: 200px;
+		height:70px;
+	}
+	.donate:hover{
+		background-color: transparent;
+	}
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body>
+	<div class="slideshow-container">
+<div class="mySlides" >
+   <img src="https://i.ytimg.com/vi/RW0tLvxf_1E/maxresdefault.jpg" style="width:100%;height:100%;">
+ </div>
+
+<div class="mySlides">
+    <img src="https://b.rgbimg.com/users/j/jo/johnnyberg/600/mjAbsqA.jpg" style="width:100%;height:100%;">
+</div>
+
+<div class="mySlides">
+  <img src="https://www.smartenup.in/wp-content/uploads/2020/05/Rainforests-Lungs-of-Earth.jpg" style="width:100%;height:100%;">
+</div>
+
+<div class="mySlides">
+  <img src="https://sumatraislandsdeforestation.files.wordpress.com/2011/10/sd.png" style="width:100%;height:100%;">
+</div>
+
+<div class="mySlides">
+  <img src="https://cdn.givecloud.co/s/files/1/0000/0537/files/seedlingshands-1000.jpg" style="width:100%;height:100%;">
+</div>
+
+</div>
+
+<div class="title">
+	<h2 class="header" style="opacity: 1;">Save Trees</h2>
+
+<nav>
+	<a class="nag1" href="index.html">HOME</a>
+	<a class="nag2" href="about_don.html">ABOUT</a>
+</nav>
+</div>
+
+<div class="para">
+	<p>"Plant a tree and <br> &nbsp  &nbsp  &nbsp  &nbsp plant a hope for future."</p>
+</div>
+<div class="line">
+	<p>It is estimated that, the number of trees in the world is 400 billion based on the satellite images. 
+	The figure is eight times as big as the previous best estimation.<br>
+    Let's continue planting trees and save the environment from destruction.</p>
+</div>
+<div id="donate">
+<button class="donate" onclick="document.location='donate_page.html'">Donate Now</button>
+</div>
+
+
+
+<script>
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+ 
+  slides[slideIndex-1].style.display = "block";  
+  
+  setTimeout(showSlides, 2000)
+};
+	
+	
+</script>
+</body>
+</html>
+
+
+
